@@ -1,83 +1,45 @@
 * {
     box-sizing: border-box;
   }
-  
-  html,
-  body {
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: rgb(74, 75, 80);
-    color: white;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-  }
-  
+
   .container {
-    width: 100%;
-    max-width: 920px;
-    margin: 0 auto;
+    height: 600px;
+    width: 800px;
+    margin-top: 50px;
+    margin: auto;
+    display:flex;
   }
-  
-  .slider-container {
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .immagine {
+    height: 600px;
+    width: 700px;
   }
-  
-  .slider-container:focus,
-  .slider-container:active {
-      outline: none;
+
+  i {
+    font-size: 50px;
+    align-self: center;
   }
-  
-  .slider-arrows-container {
-    font-size: 36px;
-    color: rgba(255, 255, 255, 0.452);
-    padding: 0 8px;
+
+  .dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
   }
-  
-  .slider-arrows-container i {
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .slider-arrows-container i:hover {
-    color: white;
-  }
-  
-  .slider-images-container {
-    flex: 1;
+
+  .relative {
     position: relative;
   }
-  
-  .slider-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-  }
-  
-  .slider-dots-container {
+
+  .dotContainer {
+    margin: auto;
     position: absolute;
-    padding: 14px;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 50px;
+    display: flex;
+   left: 50%;
+   transform: translate(-50%);
   }
-  
-  .slider-dots-container .dot {
-    display: inline-block;
-    border-radius: 50%;
-    width: 14px;
-    height: 14px;
-    background-color: rgba(255, 255, 255, 0.6);
-    margin: 0 4px;
-  }
-  
-  .slider-dots-container .dot.currentImg {
-    background-color: rgb(9, 255, 0);
+
+  .colore {
+    background-color: green;
   }
